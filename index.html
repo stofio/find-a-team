@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="index-bg">
+        <section id="welcome">
+            <div class="container">
+                <div class="row vert-center">
+                    <div class="content">
+                        <h1>WELCOME</h1>
+                        <h2>Join a team or create one</h2>
+                        <div class="row logbtns">
+                            <button id="go-signin" class="transparent-btn">Sign in</button>
+                            <button id="go-signup" class="orange-btn">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sign-in" style="display: none">
+            <div class="container">
+                <div class="row vert-center">
+                    <div class="content">
+                        <h2>Sign in</h2>
+                        <div class="input-group field">
+                            <input type="input" class="input-field" placeholder="Email" name="email" id='email' required />
+                            <label for="email" class="input-label">Email</label>
+                        </div>
+                        <div class="input-group field">
+                            <input type="password" class="input-field" placeholder="Password" name="password" id='password' required />
+                            <label for="password" class="input-label">Password</label>
+                        </div>
+                        <div class="row logbtns">
+                            <button class="transparent-btn go-back">back</button>
+                            <button class="orange-btn">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="sign-up" style="display: none">
+            <div class="container">
+                <div class="row vert-center">
+                    <div class="content">
+                        <h2>Sign up</h2>
+                        <div class="input-group field">
+                            <input type="input" class="input-field" placeholder="Name" name="name" id='name' required />
+                            <label for="name" class="input-label">Name</label>
+                        </div>
+                        <div class="input-group field">
+                            <input type="surname" class="input-field" placeholder="Surname" name="surname" id='surname' required />
+                            <label for="surname" class="input-label">Surname</label>
+                        </div>
+                        <div class="input-group field">
+                            <input type="email" class="input-field" placeholder="Email" name="email" id='email' required />
+                            <label for="email" class="input-label">Email</label>
+                        </div>
+                        <div class="input-group field">
+                            <input type="password" class="input-field" placeholder="Password" name="password" id='password' required />
+                            <label for="password" class="input-label">Password</label>
+                        </div>
+                        <div class="input-group field">
+                            <input type="password" class="input-field" placeholder="Repeat password" name="repassword" id='repassword' required />
+                            <label for="repassword" class="input-label">Repeat password</label>
+                        </div>
+                        <div class="row logbtns">
+                            <button class="transparent-btn go-back">back</button>
+                            <button class="orange-btn">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

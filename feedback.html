@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="player-bg"></div>
+    <section id="feedback">
+        <div class="container">
+            <div class="row menu text-center">
+                <div class="menu-item">
+                    <div id="menu-inbox" class="menu-icon">
+                        <img src="images/inbox.svg">
+                    </div>
+                    <h4 id="menu-inbox-ttl">INBOX</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-calendar" class="menu-icon">
+                        <img src="images/calendar.svg">
+                    </div>
+                    <h4 id="menu-calendar-ttl">CALENDAR</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-search" class="menu-icon">
+                        <img src="images/search.svg">
+                    </div>
+                    <h4 id="menu-search-ttl">SEARCH</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-profile" class="menu-icon">
+                        <img src="images/profile.svg">
+                    </div>
+                    <h4 id="menu-profile-ttl">PROFILE</h4>
+                </div>
+            </div>
+
+
+            <div class="text-center">
+                <h2 class="title">Give us a feedback</h2>
+            </div>
+
+            <div class="feedback-form">
+                <form>
+                    <fieldset>
+                        <span class="star-cb-group">
+                            <input type="radio" id="rating-5" name="rating" value="5" />
+                            <label for="rating-5">5</label>
+                            <input type="radio" id="rating-4" name="rating" value="4" />
+                            <label for="rating-4">4</label>
+                            <input type="radio" id="rating-3" name="rating" value="3" />
+                            <label for="rating-3">3</label>
+                            <input type="radio" id="rating-2" name="rating" value="2" />
+                            <label for="rating-2">2</label>
+                            <input type="radio" id="rating-1" name="rating" value="1" />
+                            <label for="rating-1">1</label>
+                            <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label
+                                for="rating-0">0</label>
+                        </span>
+                    </fieldset>
+                </form>
+
+
+                <div class="input-group field">
+                    <input type="input" class="input-field" placeholder="Short reason for contacting us" name="subject" id='subject' required />
+                    <label for="subject" class="input-label">Feedback</label>
+                </div>
+                <button class="orange-btn">Send</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

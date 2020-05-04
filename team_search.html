@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tavo-calendar.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="player-bg"></div>
+    <section id="team-search">
+        <div class="container">
+            <div class="row menu text-center">
+                <div class="menu-item">
+                    <div id="menu-inbox" class="menu-icon">
+                        <img src="images/inbox.svg" />
+                    </div>
+                    <h4 id="menu-inbox-ttl">INBOX</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-calendar" class="menu-icon">
+                        <img src="images/calendar.svg" />
+                    </div>
+                    <h4 id="menu-calendar-ttl">CALENDAR</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-search" class="menu-icon">
+                        <img src="images/search.svg" />
+                    </div>
+                    <h4 id="menu-search-ttl">SEARCH</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-profile" class="menu-icon">
+                        <img src="images/profile.svg" />
+                    </div>
+                    <h4 id="menu-profile-ttl">PROFILE</h4>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h2 class="title team-search">Search a team</h2>
+                <div class="row top-search-filter">
+                    <div class="input-group field search">
+                        <input type="input" class="input-field" placeholder="Search" name="searchTeam" id="search-team" required />
+                        <label for="search-team" class="input-label">Search</label>
+                        <div class="send">
+                            <img src="images/send_white.svg" />
+                        </div>
+                    </div>
+                    <div class="filter row">
+                        <select id="filter-team">
+                            <option value="" disabled selected>- filter -</option>
+                            <option value="">&#x2B0E name</option>
+                            <option value="">&#x2B0E location</option>
+                            <option value="">&#x2B0E players</option>
+                            <option value="">&#x2B0F name</option>
+                            <option value="">&#x2B0F location</option>
+                            <option value="">&#x2B0F players</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teams">
+                <div class="row team-row">
+                    <div class="team-logo-col">
+                        <div class="logo-border">
+                            <img src="#" />
+                        </div>
+                    </div>
+                    <div class="team-name-col">
+                        <h4>Team name <span class="num-players">(15)</span></h4>
+                    </div>
+                    <div class="team-location-col">
+                        <h4>Team location</h4>
+                    </div>
+                    <div class="team-btns-col">
+                        <button class="orange-btn">Join</button>
+                        <button class="blue-btn">View</button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row team-row">
+                    <div class="team-logo-col">
+                        <div class="logo-border">
+                            <img src="#" />
+                        </div>
+                    </div>
+                    <div class="team-name-col">
+                        <h4>Team name <span class="num-players">(15)</span></h4>
+                    </div>
+                    <div class="team-location-col">
+                        <h4>Team location</h4>
+                    </div>
+                    <div class="team-btns-col">
+                        <button class="orange-btn">Join</button>
+                        <button class="blue-btn">View</button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!--calendar functionalities-->
+    <script src="js/moment.js"></script>
+    <script src="js/tavo-calendar.js"></script>
+</body>
+
+</html>

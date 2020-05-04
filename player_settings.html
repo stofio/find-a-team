@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="player-bg"></div>
+    <section id="settings">
+        <div class="container">
+            <div class="row menu text-center">
+                <div class="menu-item">
+                    <div id="menu-inbox" class="menu-icon">
+                        <img src="images/inbox.svg">
+                    </div>
+                    <h4 id="menu-inbox-ttl">INBOX</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-calendar" class="menu-icon">
+                        <img src="images/calendar.svg">
+                    </div>
+                    <h4 id="menu-calendar-ttl">CALENDAR</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-search" class="menu-icon">
+                        <img src="images/search.svg">
+                    </div>
+                    <h4 id="menu-search-ttl">SEARCH</h4>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-profile" class="menu-icon">
+                        <img src="images/profile.svg">
+                    </div>
+                    <h4 id="menu-profile-ttl">PROFILE</h4>
+                </div>
+            </div>
+
+
+            <div class="text-center">
+                <h2 class="title">Profile</h2>
+            </div>
+
+
+            <div class="row">
+                <div class="player-settings-menu">
+                    <div class="text-center player-profile">
+                        <h4>Player name</h4>
+                        <div class="select-avaiability row">
+                            <select id="avaiability">
+                                <option value="avaiable">Avaiable</option>
+                                <option value="not_avaiable">Not avaiable</option>
+                            </select>
+                            <div class="avaiability-circle"></div>
+                        </div>
+                        <div class="profile-img">
+                            <img class="#">
+                        </div>
+                        <div class="player-settings-options">
+                            <ul>
+                                <li id="genInfo">General info</li>
+                                <li id="avaiab">Avaiability</li>
+                                <li id="rev">Reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="player-general-info">
+                    <div class="row player-info-item">
+                        <p>Location</p>
+                        <span class="editName">Edit</span>
+                        <div class="controls-update" style="display:none;">
+                            <a href="#">update</a>
+                        </div>
+                    </div>
+                    <div class="row player-info-item">
+                        <p>Position</p>
+                        <span class="editName">Edit</span>
+                        <div class="controls-update" style="display:none;">
+                            <a href="#">update</a>
+                        </div>
+                    </div>
+                    <div class="row player-info-item">
+                        <p>Foot</p>
+                        <span class="editName">Edit</span>
+                        <div class="controls-update" style="display:none;">
+                            <a href="#">update</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div id="player-avaiability" style="display:none">
+                    <div class="unavaiability">
+                        <h3>Unavaiability</h3>
+                        <span class="addUnav">Add date</span>
+                        <div class="row">
+                            <div class="unavaiability-from">
+                                <h4>From</h4>
+                            </div>
+                            <div class="unavaiability-to">
+                                <h4>To</h4>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="player-reviews" style="display:none">
+                    <div class="my-reviews">
+                        <h3>Reviews</h3>
+                        <div class="row player-single-review">
+                            <div class="player-reviewer-img">
+                                <img src="#">
+                            </div>
+                            <div class="player-reviewer-content">
+                                <h4>Reviewer name</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+
+                        <div class="row player-single-review">
+                            <div class="player-reviewer-img">
+                                <img src="#">
+                            </div>
+                            <div class="player-reviewer-content">
+                                <h4>Reviewer name</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+
+                        <div class="row player-single-review">
+                            <div class="player-reviewer-img">
+                                <img src="#">
+                            </div>
+                            <div class="player-reviewer-content">
+                                <h4>Reviewer name</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+</body>
+
+<script>
+    if ($('#avaiability').val() == 'avaiable') {
+        $('.avaiability-circle').css('background-color', 'green');
+    } else {
+        $('.avaiability-circle').css('background-color', 'red');
+    }
+    $('#avaiability').on('change', () => {
+        if ($('#avaiability').val() == 'avaiable') {
+            $('.avaiability-circle').css('background-color', 'green');
+        } else {
+            $('.avaiability-circle').css('background-color', 'red');
+        }
+    })
+
+    var generalInfo = $('#genInfo');
+    var avaiability = $('#avaiab');
+    var reviews = $('#rev');
+
+    $('#player-general-info').fadeIn();
+    generalInfo.css('background-color', 'rgba(255,255,255,0.2)');
+
+    generalInfo.on('click', () => {
+        generalInfo.css('background-color', 'rgba(255,255,255,0.2)');
+        avaiability.css('background-color', 'transparent');
+        reviews.css('background-color', 'transparent');
+        $('#player-general-info').fadeIn(100);
+        $('#player-avaiability').fadeOut(0);
+        $('#player-reviews').fadeOut(0);
+    })
+
+    avaiability.on('click', () => {
+        avaiability.css('background-color', 'rgba(255,255,255,0.2)');
+        generalInfo.css('background-color', 'transparent');
+        reviews.css('background-color', 'transparent');
+        $('#player-general-info').fadeOut(0);
+        $('#player-avaiability').fadeIn(100);
+        $('#player-reviews').fadeOut(0);
+    })
+
+    reviews.on('click', () => {
+        reviews.css('background-color', 'rgba(255,255,255,0.2)');
+        generalInfo.css('background-color', 'transparent');
+        avaiability.css('background-color', 'transparent');
+        $('#player-general-info').fadeOut(0);
+        $('#player-avaiability').fadeOut(0);
+        $('#player-reviews').fadeIn(100);
+    })
+
+    function editPlayerInfo(field) {
+
+    }
+</script>
+
+
+</html>
